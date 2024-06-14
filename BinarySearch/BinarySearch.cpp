@@ -36,3 +36,10 @@ public:
 		search(element, parent, currentNode);
 
 
+		if (parent == nullptr) {
+			ROOT = newNode;
+			return;
+		}
+
+		if (element < parent->info) {
+			parent->leftchild = newNode;  // Make the left child of the parent point to the new node
