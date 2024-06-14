@@ -27,3 +27,11 @@ public:
 		Node* newNode = new Node(element, nullptr, nullptr);
 		newNode->info = element;
 		newNode->leftchild = nullptr; 
+		point to null
+			newNode->rightchild = nullptr;
+
+		Node* parent = nullptr;
+		Node* currentNode = nullptr;
+
+		search(element, parent, currentNode);
+
