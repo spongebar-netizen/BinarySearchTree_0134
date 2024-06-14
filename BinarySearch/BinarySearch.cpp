@@ -42,4 +42,4 @@ public:
 		}
 
 		if (element < parent->info) {
-			parent->leftchild = newNode;  // Make the left child of the parent point to the new node
+			parent->leftchild = newNode;
