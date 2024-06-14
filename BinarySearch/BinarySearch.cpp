@@ -64,15 +64,29 @@ public:
 	}
 
 
-	void inorder(Node* ptr) // function to perform inorder traversal
+	void inorder(Node* ptr)
 	{
 		if (ROOT == NULL) {
 			cout << "Tree is empty" << endl;
 			return;
 		}
 		if (ptr != NULL) {
-			inorder(ptr->leftchild); // left
-			cout << ptr->info << " "; // root
-			inorder(ptr->rightchild); // right
+			inorder(ptr->leftchild);
+			cout << ptr->info << " ";
+			inorder(ptr->rightchild);
 		}
 	}
+
+	void preorder(Node* ptr)
+	{
+		if (ROOT == NULL) {
+			cout << "Tree is empty" << endl;
+			return;
+		}
+		if (ptr != NULL) {
+			cout << ptr->info << " ";
+			preorder(ptr->leftchild); 
+			preorder(ptr->rightchild); 
+		}
+	}
+
