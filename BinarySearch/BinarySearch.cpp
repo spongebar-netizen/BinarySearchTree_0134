@@ -103,3 +103,6 @@ public:
 		}
 	}
 };
+
+int main()
+{
